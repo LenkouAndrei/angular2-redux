@@ -1,0 +1,5 @@
+<fc-article
+*ngFor="let article of articles | feFilter:(wordToFilter$ | async)"
+[article]="article"
+[style.display]="((isOnlyMy$ | async) && !article.isCreatedByMe) ? 'none' : 'block'"
+></fc-article>

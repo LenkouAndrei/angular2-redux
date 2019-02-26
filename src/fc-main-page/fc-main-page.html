@@ -1,0 +1,8 @@
+<fc-source-name></fc-source-name>
+<fc-filter-panel
+  (onNewsSourceChange)="loadNews($event)"
+></fc-filter-panel>
+<div class="wrapper">
+  <fc-articles-list></fc-articles-list>
+  <button class="footer-button" (click)="loadMoreArticles()">{{loadMore}}</button>
+</div>
